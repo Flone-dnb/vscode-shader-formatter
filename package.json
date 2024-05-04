@@ -61,6 +61,10 @@
     "eslint": "^8.57.0",
     "typescript": "^5.4.5"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Flone-dnb/vscode-shader-formatter"
+  },
   "license": "MIT",
   "dependencies": {
     "@microsoft/vscode-file-downloader-api": "^1.0.1",

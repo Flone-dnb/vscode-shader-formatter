@@ -1,7 +1,7 @@
 # README
 
-This extension simply runs the standalone `shader-formatter` tool when you use "format code" command.
+This extension tries to download the latest `shader-formatter` tool and formats your shader code when you save your files.
 
-Configure settings of this extension and set path to the `shader-formatter` binary for it to work.
+You can also specify a path to the local `shader-formatter` binary to use it instead of the downloaded.
 
 For more information see: https://github.com/Flone-dnb/shader-formatter
