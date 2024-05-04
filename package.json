@@ -3,8 +3,9 @@
   "displayName": "Shader Formatter",
   "description": "Format shader code according to your code style.",
   "version": "1.0.0",
+  "publisher": "flone",
   "engines": {
-    "vscode": "^1.88.0"
+    "vscode": "^1.80.0"
   },
   "categories": [
     "Formatters"
