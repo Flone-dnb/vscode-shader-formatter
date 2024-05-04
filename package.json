@@ -1,0 +1,69 @@
+{
+  "name": "shader-formatter",
+  "displayName": "Shader Formatter",
+  "description": "Format shader code according to your code style.",
+  "version": "1.0.0",
+  "engines": {
+    "vscode": "^1.88.0"
+  },
+  "categories": [
+    "Formatters"
+  ],
+  "keywords": [
+    "Shader",
+    "HLSL",
+    "GLSL"
+  ],
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "extensionDependencies": [
+    "mindaro-dev.file-downloader"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "configuration": {
+      "title": "Shader Formatter",
+      "properties": {
+        "shader-formatter.executable": {
+          "type": [
+            "string"
+          ],
+          "default": "",
+          "description": "Specifies the path to local `shader-formatter` binary to use."
+        },
+        "shader-formatter.showLatestVersionMessage": {
+          "type": [
+            "boolean"
+          ],
+          "default": false,
+          "description": "Defines whether or not the extension will show a message on activation if you are using the latest version."
+        }
+      }
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile && npm run lint",
+    "lint": "eslint src --ext ts",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/mocha": "^10.0.6",
+    "@types/node": "18.x",
+    "@types/vscode": "^1.89.0",
+    "@typescript-eslint/eslint-plugin": "^7.7.1",
+    "@typescript-eslint/parser": "^7.7.1",
+    "@vscode/test-cli": "^0.0.8",
+    "@vscode/test-electron": "^2.3.9",
+    "eslint": "^8.57.0",
+    "typescript": "^5.4.5"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@microsoft/vscode-file-downloader-api": "^1.0.1",
+    "uri-js": "^4.2.2"
+  }
+}
