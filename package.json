@@ -3,7 +3,7 @@
   "displayName": "Shader Formatter",
   "description": "Format shader code according to your code style.",
   "version": "1.0.0",
-  "publisher": "flone",
+  "publisher": "Flone",
   "engines": {
     "vscode": "^1.89.0"
   },
@@ -69,6 +69,7 @@
   "license": "MIT",
   "dependencies": {
     "@microsoft/vscode-file-downloader-api": "^1.0.1",
-    "uri-js": "^4.2.2"
+    "uri-js": "^4.2.2",
+    "yo": "^5.0.0"
   }
 }
