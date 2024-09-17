@@ -2,7 +2,7 @@
   "name": "shader-formatter",
   "displayName": "Shader Formatter",
   "description": "Format shader code according to your code style.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "publisher": "Flone",
   "engines": {
     "vscode": "^1.89.0"

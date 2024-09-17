@@ -4,6 +4,6 @@ All notable changes to the "shader-formatter" extension will be documented in th
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
-## [Unreleased]
+## 1.0.1
 
-- Initial release.
+- Fix files with non-standard HLSL/GLSL code not being formatted at all.

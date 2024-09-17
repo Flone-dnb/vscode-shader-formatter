@@ -90,6 +90,16 @@ export async function activate(context: vscode.ExtensionContext) {
 			}
 		}
 		if (!supportedLanguage) {
+			// Check the file name extension because non-standard HLSL/GLSL
+			// may be interpreted as "plaintext" in `languageId`.
+			for (var lang of SUPPORTED_FILE_FORMATS) {
+				if (document.fileName.endsWith(lang)) {
+					supportedLanguage = true;
+					break;
+				}
+			}
+		}
+		if (!supportedLanguage) {
 			return
 		}
 
